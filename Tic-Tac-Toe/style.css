@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --voilet: rgb(208, 226, 43);
+    --winning-blocks:rgb(44, 33, 145);
+}
+
+body{
+    color: var(--voilet);
+    font-family: "Finger Paint", sans-serif;
+}
+/*
+
+h1{
+    font-size: 54px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 40px;
+    flex-direction: column;
+    height: 100vh;
+    background-color:rgb(73, 122, 185);
+} */
+
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #205574; /* Light background color */
+  }
+  
+  h1#playerText {
+    font-size: 54px;
+    margin-bottom: 20px;
+  }
+  
+  /* Restart button styles */
+  button#restartBtn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--voilet);
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Finger Paint", sans-serif; 
+  }
+  
+  button#restartBtn:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+  }
+  
+  /* Game board styles */
+  #gameboard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px; /* Adjust width as needed */
+    margin: 40px 0; /* Margin for spacing */
+  }
+  
+#gameboard{
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--voilet);
+    font-size: 100px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+}
+.box:nth-child(3n){
+    border-right: none;
+}
+.box:nth-child(6) ~ .box{
+    border-bottom: none;
+}
+/* 
+button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--voilet);
+    display: flex;
+    color:rgb(53, 50, 47);
+    justify-content: center;
+    height: 40px;
+    width: 80px;
+    margin:auto;
+    font-family: "Finger Paint", sans-serif;   
+}
+
+button:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+} */
